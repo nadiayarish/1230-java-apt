@@ -38,8 +38,14 @@ jobs:
         with:
           ref: main
 
+      # - name: Show directory
+      #   run: 'pwd'
+
+      # - name: List files
+      #   run: ''
+
       - name: Install dependecies
-        run: 'maven compile'
+        run: 'mvn compile'
 
       - name: Build application
         run: 'mvn package -DskipTests'
