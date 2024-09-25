@@ -38,11 +38,11 @@ jobs:
         with:
           ref: main
 
-      # - name: Show directory
-      #   run: 'pwd'
+      - name: Show directory
+        run: 'pwd'
 
-      # - name: List files
-      #   run: ''
+      - name: List files
+        run: 'ls -al'
 
       - name: Install dependecies
         run: 'mvn compile'
